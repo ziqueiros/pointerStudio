@@ -1,4 +1,4 @@
-pointerStudy
+pointerStudio
 ============
 
 Study about C pointers
