@@ -3,10 +3,11 @@
 // a non-constant pointer to constant data.
 
 #include <stdio.h>
+#include <ctype.h>
 
 void printCharacters( const char *sPtr );
 
-int main( void )
+int main11( void )
 {
    // initialize char array
    char string[] = "print characters of a string"; 
@@ -14,6 +15,7 @@ int main( void )
    puts( "The string is:" );
    printCharacters( string );
    puts( "" );
+   return 0;
 } // end main
 
 // sPtr cannot modify the character to which it points,
@@ -21,9 +23,18 @@ int main( void )
 void printCharacters( const char *sPtr )
 {
    // loop through entire string                            
-   for ( ; *sPtr != '\0'; ++sPtr ) { // no initialization   
-      printf( "%c", *sPtr );                                   
-   } // end for                                             
+   for ( ; *sPtr != '\0'; ++sPtr ) { // no initialization
+	   //Esto si hace sentido, no se puede cambiar el contenido!!!
+	   //*sPtr = toupper(*sPtr);
+	   printf( "%c", *sPtr );
+   } // end for
+
+
+   char innerString[] = "test";
+   sPtr = innerString;
+
+   printf( "\ninside: %s\n", sPtr );
+
 } // end function printCharacters
 
 

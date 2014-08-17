@@ -3,7 +3,7 @@
 #include <stdio.h>
 #define ARRAY_SIZE 4
 
-int main( void )
+int main20( void )
 {
    int b[] = { 10, 20, 30, 40 }; // create and initialize array b
    int *bPtr = b; // create bPtr and point it to array b

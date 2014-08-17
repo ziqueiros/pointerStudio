@@ -6,13 +6,15 @@
 
 size_t getSize( float *ptr ); // prototype
 
-int main( void )
+int main16( void )
 {
    float array[ SIZE ]; // create array
 
    printf( "The number of bytes in the array is %u"            
            "\nThe number of bytes returned by getSize is %u\n",
-           sizeof( array ), getSize( array ) );                
+           sizeof( array ), getSize( array ) );
+   return 0;
+
 } // end main
 
 // return size of ptr

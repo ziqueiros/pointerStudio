@@ -4,7 +4,7 @@
 
 int cubeByValue( int n ); // prototype
 
-int main( void )
+int main06( void )
 {
    int number = 5; // initialize number
 
@@ -14,6 +14,8 @@ int main( void )
    number = cubeByValue( number );
 
    printf( "\nThe new value of number is %d\n", number );
+
+   return 0;
 } // end main
 
 // calculate and return cube of integer argument                 

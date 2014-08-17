@@ -2,7 +2,7 @@
 // Attempting to modify a constant pointer to constant data.
 #include <stdio.h>
 
-int main( void )
+int main14( void )
 {
    int x = 5; // initialize x
    int y; // define y
@@ -15,6 +15,8 @@ int main( void )
    printf( "%d\n", *ptr );
    //*ptr = 7; // error: *ptr is const; cannot assign new value
    //ptr = &y; // error: ptr is const; cannot assign new address
+
+   return 0;
 } // end main
 
 

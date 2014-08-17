@@ -4,11 +4,12 @@
 #include <stdio.h>
 void f( const int *xPtr ); // prototype
 
-int main( void )
+int main12( void )
 {
    int y; // define y
 
    f( &y ); // f attempts illegal modification
+   return 0;
 } // end main
 
 // xPtr cannot be used to modify the 

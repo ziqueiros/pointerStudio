@@ -7,7 +7,7 @@ void function1( int a );
 void function2( int b );
 void function3( int c );
 
-int main( void )
+int main28( void )
 {
    // initialize array of 3 pointers to functions that each take an
    // int argument and return void                              

@@ -2,7 +2,7 @@
 // Using operator sizeof to determine standard data type sizes.
 #include <stdio.h>
 
-int main( void )
+int main17( void )
 { 
    char c;           
    short s;         
@@ -29,7 +29,10 @@ int main( void )
           sizeof( int ), sizeof l, sizeof( long ), sizeof ll,           
           sizeof( long long ), sizeof f, sizeof( float ), sizeof d,     
           sizeof( double ), sizeof ld, sizeof( long double ),           
-          sizeof array, sizeof ptr );                                   
+          sizeof array, sizeof ptr );
+
+   return 0;
+
 } // end main
 
 

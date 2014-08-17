@@ -2,7 +2,7 @@
 // Using the & and * pointer operators.
 #include <stdio.h>
 
-int main( void )
+int main04( void )
 {
    int a; // a is an integer
    int *aPtr; // aPtr is a pointer to an integer
@@ -19,7 +19,11 @@ int main( void )
    printf( "\n\nShowing that * and & are complements of "
            "each other\n&*aPtr = %p"   
            "\n*&aPtr = %p\n", &*aPtr, *&aPtr );
-} // end main
+
+   printf (":: %p",aPtr);
+
+   return 0;
+}
 
 
 

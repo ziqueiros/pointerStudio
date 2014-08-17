@@ -6,7 +6,7 @@
 
 void bubbleSort( int * const array, size_t size ); // prototype
 
-int main( void )
+int main15( void )
 {
    // initialize array a
    int a[ SIZE ] = { 2, 6, 4, 8, 10, 12, 89, 68, 45, 37 };
@@ -30,6 +30,9 @@ int main( void )
    } // end for
 
    puts( "" );
+
+   return 0;
+
 } // end main
 
 // sort an array of integers using bubble sort algorithm
@@ -45,7 +48,7 @@ void bubbleSort( int * const array, size_t size )
       // loop to control comparisons during each pass
       for ( j = 0; j < size - 1; ++j ) {
 
-         // swap adjacent elements if they’re out of order
+         // swap adjacent elements if theyï¿½re out of order
          if ( array[ j ] > array[ j + 1 ] ) {
             swap( &array[ j ], &array[ j + 1 ] );
          } // end if

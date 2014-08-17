@@ -13,7 +13,7 @@ void shuffle( unsigned int wDeck[][ FACES ] ); // shuffling modifies wDeck
 void deal( unsigned int wDeck[][ FACES ], const char *wFace[], 
    const char *wSuit[] ); // dealing doesn't modify the arrays
 
-int main( void )
+int main24( void )
 {
    // initialize suit array                       
    const char *suit[ SUITS ] =            

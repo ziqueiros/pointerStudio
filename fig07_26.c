@@ -7,8 +7,9 @@
 void bubble( int work[], size_t size, int (*compare)( int a, int b ) );
 int ascending( int a, int b );
 int descending( int a, int b );
+void swap2( int *element1Ptr, int *element2ptr );
 
-int main( void )
+int main26( void )
 {
    int order; // 1 for ascending order or 2 for descending order
    size_t counter; // counter
@@ -46,6 +47,8 @@ int main( void )
    puts( "\n" );
 } // end main
 
+
+
 // multipurpose bubble sort; parameter compare is a pointer to
 // the comparison function that determines sorting order
 void bubble( int work[], size_t size, int (*compare)( int a, int b ) )
@@ -53,7 +56,7 @@ void bubble( int work[], size_t size, int (*compare)( int a, int b ) )
    unsigned int pass; // pass counter
    size_t count; // comparison counter
 
-   void swap( int *element1Ptr, int *element2ptr ); // prototype
+   //void swap( int *element1Ptr, int *element2ptr ); // prototype
 
    // loop to control passes
    for ( pass = 1; pass < size; ++pass ) {
@@ -71,7 +74,7 @@ void bubble( int work[], size_t size, int (*compare)( int a, int b ) )
 
 // swap values at memory locations to which element1Ptr and 
 // element2Ptr point
-void swap( int *element1Ptr, int *element2Ptr )
+void swap2( int *element1Ptr, int *element2Ptr )
 {
    int hold; // temporary holding variable
 

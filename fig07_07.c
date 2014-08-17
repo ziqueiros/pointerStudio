@@ -5,7 +5,7 @@
 
 void cubeByReference( int *nPtr ); // function prototype
 
-int main( void )
+int main07( void )
 {
    int number = 5; // initialize number
 
@@ -15,6 +15,8 @@ int main( void )
    cubeByReference( &number );
 
    printf( "\nThe new value of number is %d\n", number );
+
+   return 0;
 } // end main
 
 // calculate cube of *nPtr; actually modifies number in main
